@@ -1,0 +1,125 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-plates {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 10% 10% 10% 10%;
+}
+
+@media screen and (min-width: 1050px) {
+  .main-plates {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .dis-biggie {
+    opacity: 0;
+  }
+
+  .dis-big {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-plates {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .dis {
+    display: none;
+  }
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  /* text-align: center; */
+}
+
+body {
+  background-image: url("img/picnic.png");
+}
+
+.outer {
+  width: 100vw;
+  height: 100vh;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.inner {
+  position: absolute;
+}
+
+#napkin {
+  background-color: white;
+  /* margin: 0 auto; */
+  height: 90%;
+  width: 90%;
+  margin: 5%;
+  /* display: inline-block; */
+}
+
+/* mouse with chopsticks */
+.mouse {
+  cursor: url(img/chopsticks.png), auto;
+}
+
+/* animations */
+
+.p1 {
+  animation: mymove 5s infinite;
+}
+
+.p2 {
+  animation: yourmove 10s infinite;
+}
+
+.p3 {
+  animation: allmove 3s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes yourmove {
+  25% {
+    transform: rotate(50deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes allmove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
