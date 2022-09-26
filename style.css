@@ -73,11 +73,18 @@ body {
 
 #napkin {
   background-color: white;
-  /* margin: 0 auto; */
   height: 90%;
   width: 90%;
   margin: 5%;
-  /* display: inline-block; */
+  border-radius: 15px;
+}
+
+#popup {
+  height: 60%;
+  width: 75%;
+  margin: 12.5%;
+  opacity: 90%;
+  border-radius: 15px;
 }
 
 /* mouse with chopsticks */
