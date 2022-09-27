@@ -1,3 +1,29 @@
+@font-face {
+  font-family: PierSans;
+  src: url("fonts/PPPierSans-Regular.otf");
+}
+@font-face {
+  font-family: PierSans;
+  font-weight: bold;
+  src: url("fonts/PPPierSans-Bold.otf");
+}
+
+@font-face {
+  font-family: PierSansItalic;
+  font-weight: italic;
+  src: url("fonts/PPPierSans-Italic.otf");
+}
+
+@font-face {
+  font-family: Mondwest;
+  src: url("fonts/PPMondwest-Regular.otf");
+}
+
+@font-face {
+  font-family: NeueBit;
+  src: url("fonts/PPNeueBit-Bold.otf");
+}
+
 html,
 body {
   margin: 0;
@@ -79,12 +105,53 @@ body {
   border-radius: 15px;
 }
 
-#popup {
+#popup,
+#about {
+  background-color: #52a6ce;
   height: 60%;
   width: 75%;
   margin: 12.5%;
   opacity: 90%;
   border-radius: 15px;
+  display: none;
+}
+
+#close {
+  height: 50%;
+  width: 64%;
+  margin: 18%;
+  font-size: 2rem;
+  overflow: scroll;
+}
+
+.pu1 {
+  height: 75%;
+  width: 80%;
+  margin: 10%;
+  opacity: 100%;
+  color: white;
+  font-size: 2rem;
+  overflow: scroll;
+}
+.close {
+  height: 20%;
+  width: 64%;
+  margin: 18%;
+}
+
+p {
+  font-size: 1em;
+  font-family: NeueBit;
+}
+
+h1 {
+  font-family: Mondwest;
+  margin-top: 0px;
+}
+
+#bao {
+  width: 10%;
+  float: right;
 }
 
 /* mouse with chopsticks */
