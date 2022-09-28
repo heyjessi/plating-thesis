@@ -116,6 +116,11 @@ body {
   display: none;
 }
 
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
 #close {
   height: 50%;
   width: 64%;
@@ -124,10 +129,30 @@ body {
   overflow: scroll;
 }
 
+#name {
+  height: 90%;
+  width: 90%;
+  margin: 5%;
+  font-size: 1.5em;
+  border-radius: 15px;
+  position: relative;
+  display: none;
+}
+
+.thesis-name {
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: end;
+}
+
 .pu1 {
   height: 75%;
   width: 80%;
-  margin: 10%;
+  margin: 50px 10% 50px 10%;
   opacity: 100%;
   color: white;
   font-size: 2rem;
@@ -149,9 +174,9 @@ h1 {
   margin-top: 0px;
 }
 
-#bao {
-  width: 10%;
+#bao-close {
   float: right;
+  width: 35px;
 }
 
 /* mouse with chopsticks */
@@ -196,4 +221,8 @@ h1 {
   100% {
     transform: rotate(180deg);
   }
+}
+
+#baos-animation {
+  display: none;
 }

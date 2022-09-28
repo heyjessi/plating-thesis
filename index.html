@@ -13,32 +13,61 @@
     <main>
       <!-- dis-biggie - LARGE dis-big - MEDIUM dis - PHONE -->
       <!-- p1 - green p2 - blue p3 - red -->
+      <!-- make it raingurl -->
+
       <div class="outer mouse">
         <div class="inner" id="napkin"></div>
-        <div class="main-plates inner">
+        <div class="main-plates inner" id="plates-animation">
           <img src="img/plate2.png" class="p1 dis-biggie" />
-          <img src="img/plate4.png" class="p2 dis dis-biggie" />
+          <img
+            src="img/plate4.png"
+            class="p2 dis dis-biggie"
+            onclick="document.getElementById('baos-animation').style.display='grid';document.getElementById('plates-animation').style.display='none'"
+          />
           <img src="img/plate3.png" class="p3 dis-biggie" />
           <img
             src="img/plate3.png"
             class="p2"
             onclick="document.getElementById('popup').style.display='block'"
           />
-          <img src="img/text.png" />
+          <img src="img/text.png"
+          onmouseover="document.getElementById('name').style.display='block'"
+          onmouseout="document.getElementById('name').style.display='none'""/>
           <img
             src="img/plate4.png"
             class="p1"
             onclick="document.getElementById('about').style.display='block'"
           />
           <img src="img/plate4.png" class="p3 dis dis-big" />
-          <img src="img/plate3.png" class="p1 dis dis-big" />
+          <img
+            src="img/plate3.png"
+            class="p1 dis dis-big"
+            onclick="document.getElementById('baos-animation').style.display='none'"
+          />
           <img src="img/plate2.png" class="p2 dis-big" />
+        </div>
+
+        <!-- baos animation -->
+        <div class="main-plates inner" id="baos-animation">
+          <img src="img/bao.png" class="p1 dis-biggie" />
+          <img
+            src="img/bao.png"
+            class="p1 dis dis-biggie"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('baos-animation').style.display='none'"
+          />
+          <img src="img/bao.png" class="p1 dis-biggie" />
+          <img src="img/bao.png" class="p1" />
+          <img src="img/text.png" class="p1" />
+          <img src="img/bao.png" class="p1" />
+          <img src="img/bao.png" class="p1 dis dis-big" />
+          <img src="img/bao.png" class="p1 dis dis-big" />
+          <img src="img/bao.png" class="p1 dis-big" />
         </div>
         <div class="inner" id="popup">
           <div class="inner pu1">
             <h1>
               abstract<img
-                id="bao"
+                id="bao-close"
                 onclick="document.getElementById('popup').style.display='none'"
                 src="img/bao.png"
               />
@@ -117,7 +146,8 @@
           <div class="inner pu1">
             <h1>
               about<img
-                id="bao"
+                id="bao-close"
+                class="bao"
                 onclick="document.getElementById('about').style.display='none'"
                 src="img/bao.png"
               />
@@ -126,7 +156,8 @@
             <p>
               welcome! this thesis website culminates my 60 page written thesis,
               submitted to the statistics and folklore and mythology departments
-              at harvard university. you can also view more of my projects at
+              at harvard university. <br /><br />
+              you can also view more of my projects at
               <a href="www.jesseng.com">jesseng.com</a> or keep updated on my
               adventures on instagram and twitter @goudatalks. <br /><br />
               i'm always down for a coding, design or food collaboration. as you
@@ -134,6 +165,12 @@
               elaborate and unfussy meals. bon appétit!
             </p>
           </div>
+        </div>
+        <div class="inner" id="name">
+          <p class="thesis-name">
+            your plate served by a machine!<br />a folk & myth + statistics
+            thesis by jess eng
+          </p>
         </div>
       </div>
     </main>
