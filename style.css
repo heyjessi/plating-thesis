@@ -106,7 +106,10 @@ body {
 }
 
 #popup,
-#about {
+#about,
+#one,
+#two,
+#three {
   background-color: #52a6ce;
   height: 60%;
   width: 75%;
@@ -225,4 +228,10 @@ h1 {
 
 #baos-animation {
   display: none;
+}
+
+.quote-pp {
+  float: right;
+  text-align: end;
+  margin-top: 0px;
 }

@@ -18,13 +18,21 @@
       <div class="outer mouse">
         <div class="inner" id="napkin"></div>
         <div class="main-plates inner" id="plates-animation">
-          <img src="img/plate2.png" class="p1 dis-biggie" />
+          <img
+            src="img/plate2.png"
+            class="p1 dis-biggie"
+            onclick="document.getElementById('one').style.display='block'"
+          />
           <img
             src="img/plate4.png"
             class="p2 dis dis-biggie"
             onclick="document.getElementById('baos-animation').style.display='grid';document.getElementById('plates-animation').style.display='none'"
           />
-          <img src="img/plate3.png" class="p3 dis-biggie" />
+          <img
+            src="img/plate3.png"
+            class="p3 dis-biggie"
+            onclick="document.getElementById('two').style.display='block'"
+          />
           <img
             src="img/plate3.png"
             class="p2"
@@ -44,10 +52,14 @@
             class="p1 dis dis-big"
             onclick="document.getElementById('baos-animation').style.display='none'"
           />
-          <img src="img/plate2.png" class="p2 dis-big" />
+          <img
+            src="img/plate2.png"
+            class="p2 dis-big"
+            onclick="document.getElementById('three').style.display='block'"
+          />
         </div>
 
-        <!-- baos animation -->
+        <!-- baos animation easter egg -->
         <div class="main-plates inner" id="baos-animation">
           <img src="img/bao.png" class="p1 dis-biggie" />
           <img
@@ -63,21 +75,23 @@
           <img src="img/bao.png" class="p1 dis dis-big" />
           <img src="img/bao.png" class="p1 dis-big" />
         </div>
+
+        <!-- abstract -->
         <div class="inner" id="popup">
           <div class="inner pu1">
             <h1>
               abstract<img
                 id="bao-close"
                 onclick="document.getElementById('popup').style.display='none'"
-                src="img/bao.png"
+                src="img/bao-no.png"
               />
             </h1>
 
             <p>
               If you had to imagine the perfect plate of food, delivered to you
               from anywhere in the world in mere seconds, what would it be?
-              Would you fixate on the taste or the plating? Or would your mind
-              crave a piper platter of nostalgia and comfort?<br /><br />
+              Would you fixate on the taste? Would plating come to mind? Or
+              would your mind crave a piper platter of nostalgia and comfort?<br /><br />
 
               Here’s another exercise. Think back to your last plated meal. How
               long did it take for you to plate your food? If you’re anything
@@ -101,47 +115,49 @@
               nowadays, offers another model to plate delectable meals.
               <br /><br />
 
-              With regards to plating, it seems too simplistic to say "You know
-              it when you see it," especially when based around a person’s
-              highly subjective opinion. So truthfully, no one has come up with
-              one formal definition for what is aesthetically acceptable to
-              everyone.<br /><br />
+              It almost seems reductive to say "You know good plating when you
+              see it" or "it's a skill you're born with." But that is impossible
+              — people must learn the rules for plating from someone, or
+              somewhere. One answer lies in oral traditions: plating traditions
+              are passed down from teacher to student and from elder to younger
+              generation. With enough repetition, students adopt these plating
+              traditions and make these practices their own. Moreover, ideas of
+              beautiful food photography can come from the visually rich and
+              natural environment, television shows and the internet including
+              blogs, advertisements, and Instagram. With all these competing
+              sources for food plating, is it true that the perfect plate of
+              food lies beyond our grasp?<br /><br />
 
-              But after researching this topic for hours, I noticed certain
-              themes that could be codified. In a world saturated with
-              conflicting advice about food presentation, could a computer,
-              trained only on rules for beautiful and traditional platings and
-              this hand picked dataset, pleasingly arrange food? Hours of
-              research and hundreds of lines of code later, this comprehensive
-              primer on food plating brings us one step closer to formalizing
-              the definition of an “aesthetically pleasing plate of food.”<br /><br />
+              The easy thing would be to accept the facts and call it a day. But
+              after researching this topic for hours, I noticed certain themes
+              about plating that could be codified. Conflicting advice be damned
+              -- could a computer, trained only on rules for beautiful and
+              traditional platings and a hand picked dataset, pleasingly arrange
+              food? <br /><br />
 
-              Food stylist Victoria Granof once said of food plating, “It's just
-              something that you're born with.” But that is impossible — people
-              must learn the rules for plating from someone, or somewhere. One
-              answer lies in oral traditions: plating traditions are passed down
-              from teacher to student and from elder to younger generation. With
-              enough repetition, students adopt these plating traditions and
-              make these practices their own.
-              <br /><br />
-
-              Ideas of beautiful food photography can also come from the
-              visually rich and natural environment, television shows and the
-              internet including blogs, advertisements, and Instagram. If humans
-              can learn and internalize rules, surely a computer can follow a
-              similar procedure, or at the very least try to.<br /><br />
+              Actually, it can! The quality, on the other hand, depends on the
+              quality of the input. The more images, the better the computer can
+              comprehend plating. And the more measurements, the more accurate
+              the final food placement. Hours of research and hundreds of lines
+              of code later, this comprehensive primer on food plating brings us
+              one step closer to formalizing the definition of an “aesthetically
+              pleasing plate of food.” So if humans can learn and internalize
+              rules, surely a computer can follow a similar procedure, or at the
+              very least try to.<br /><br />
 
               My thesis research is three fold. First, I cover the history of
               plating, starting from its earliest traditions and rituals to its
               modern adoption into the history of food photography and
-              restaurants. Then, I use interviews with chefs, culinary
-              instructors and stylists to create a comprehensive about present
-              day attitudes towards plating. Finally, I proposed and implemented
-              two methods to achieve balanced and aesthetically pleasing plates
-              of food.
+              restaurants. Then, I stitch together interviews with chefs,
+              culinary instructors and stylists to showcase present day
+              attitudes towards plating. Finally, I propose and implement two
+              methods to achieve balanced and aesthetically pleasing plates of
+              food.
             </p>
           </div>
         </div>
+
+        <!-- about -->
         <div class="inner" id="about">
           <div class="inner pu1">
             <h1>
@@ -149,7 +165,7 @@
                 id="bao-close"
                 class="bao"
                 onclick="document.getElementById('about').style.display='none'"
-                src="img/bao.png"
+                src="img/bao-no.png"
               />
             </h1>
 
@@ -170,6 +186,135 @@
             </p>
           </div>
         </div>
+
+        <!-- first thesis part -->
+        <div class="inner" id="one">
+          <div class="inner pu1">
+            <h1>
+              1: history<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('one').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p></p>
+          </div>
+        </div>
+
+        <!-- two thesis part -->
+        <div class="inner" id="two">
+          <div class="inner pu1">
+            <h1>
+              2: quotes<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('two').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p></p>
+
+            <p>
+              "If it's familiar, you want to eat it. If it's something you
+              recognize, you want to eat it. I think the first rule is, is it
+              something that I would eat myself?"
+            </p>
+            <p class="quote-pp">- Sue Li, <br />Food Stylist</p>
+
+            <p>
+              "Overhead is not necessarily the best way to shoot it. You know,
+              it's just different angles and different proportions and scales.
+              And it's exciting. [Instagram] was very boring for a while."
+            </p>
+            <p class="quote-pp">- Victoria Granof, <br />Food Stylist</p>
+
+            <p>
+              "Food photography right now is the perfectly imperfect plate of
+              food. The first plate is the plate that everybody likes the most
+              because it's the one that you think about the least."
+            </p>
+            <p class="quote-pp">- Sue Li, <br />Food Stylist</p>
+
+            <p>
+              "We showed the food at that moment where it has the most emotional
+              impact, where it makes you uncomfortable. That's the moment where
+              I said I would rather make pictures that are compelling because
+              they evoke this really strong, emotional response from people than
+              something that's easy to look at and everybody can copy it and
+              it's not special."
+            </p>
+            <p class="quote-pp">- Victoria Granof, <br />Food Stylist</p>
+
+            <p>
+              “I can cut like a machine and I can make every single thing look
+              the exact same shape, but that's not how things are supposed to be
+              now. They need to be more random. They don't want little cubes
+              that are all identical…Now everybody wants crumbs. Everybody wants
+              drips.”
+            </p>
+            <p class="quote-pp">- Lisa Cherkasky, <br />Food Stylist</p>
+
+            <p>
+              “Everything is a reflection of where we are as a society. When it
+              comes to photographs and advertising and everything and food is,
+              you know, they want it to look like you could just take it.”
+            </p>
+            <p class="quote-pp">- Lisa Cherkasky, <br />Food Stylist</p>
+
+            <p>
+              "I've always had it in my blood line. I was in ceramics. I did
+              jewelry when I was a kid. Cause I had all these artist friends
+              from my family, so I just decided I had to start doing that for
+              myself again as an adult. So in the past five to six years, I've
+              just kind of been intertwining, both of them and I think it's help
+              both thrive at the end of the day"
+            </p>
+            <p class="quote-pp">
+              - Alexandra Motz, <br />Pastry Chef and Artist
+            </p>
+
+            <p>
+              "Because it's not just about what you're seeing, but how those
+              flavors are touching [each other]. It can look great, but flavors
+              can be missed because they're not close to one another.""
+            </p>
+            <p class="quote-pp">
+              - Rachael Collins, <br />Chef de Cuisine at Juliet
+            </p>
+
+            <p>
+              "Make sure that you leave that empty space and the importance of
+              critical empty space, which is true in all art forms. The
+              difference between the distance between God's finger and Adams's
+              finger in the Sistine Chapel ceiling is pivotal. It can't be any
+              more, it can't be any less. That's an empty space. "
+            </p>
+            <p class="quote-pp">
+              - Jonathan Zearfoss, <br />Professor at the CIA
+            </p>
+          </div>
+        </div>
+
+        <!-- third thesis part -->
+        <div class="inner" id="three">
+          <div class="inner pu1">
+            <h1>
+              3: stats<img
+                id="bao-close"
+                class="bao"
+                onclick="document.getElementById('three').style.display='none'"
+                src="img/bao-no.png"
+              />
+            </h1>
+
+            <p></p>
+          </div>
+        </div>
+
+        <!-- text animation easter egg -->
         <div class="inner" id="name">
           <p class="thesis-name">
             your plate served by a machine!<br />a folk & myth + statistics
