@@ -164,6 +164,12 @@ ul {
   margin-bottom: 15px;
 }
 
+h2 {
+  font-family: Mondwest;
+  font-size: 8vw;
+  text-align: center;
+}
+
 li {
   font-size: 21px;
 }
@@ -217,8 +223,16 @@ li {
   }
 }
 
-#baos-animation {
+#baos-animation,
+#eyes-animation {
   display: none;
+}
+
+#eyes-animation {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 80px;
 }
 
 .quote-pp {
@@ -239,4 +253,15 @@ li {
 
 .formula {
   font-size: 18px;
+}
+
+.eyes {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#abbreviated-stats {
+  display: none;
 }

@@ -46,7 +46,11 @@
             class="p1"
             onclick="document.getElementById('about').style.display='block'"
           />
-          <img src="img/plate4.png" class="p3 dis dis-big" />
+          <img
+            src="img/plate4.png"
+            class="p3 dis dis-big"
+            onclick="document.getElementById('plates-animation').style.display='none';document.getElementById('eyes-animation').style.display='block'"
+          />
           <img
             src="img/plate3.png"
             class="p1 dis dis-big"
@@ -76,6 +80,16 @@
           <img src="img/bao.png" class="p1 dis-big" />
         </div>
 
+        <!-- eyes animation -->
+        <div class="inner" id="eyes-animation">
+          <img
+            src="img/eye.gif"
+            class="eyes"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('eyes-animation').style.display='none'"
+          />
+          <h2>you eat with your eyes</h2>
+        </div>
+
         <!-- abstract -->
         <div class="inner" id="popup">
           <div class="inner pu1">
@@ -91,28 +105,28 @@
               If you had to imagine the perfect plate of food, delivered to you
               from anywhere in the world in mere seconds, what would it be?
               Would you fixate on the taste? Would plating come to mind? Or
-              would your mind crave a piper platter of nostalgia and comfort?<br /><br />
+              would you crave a piper platter of nostalgia and comfort?<br /><br />
 
               Here’s another exercise. Think back to your last plated meal. How
               long did it take for you to plate your food? If you’re anything
-              like me, it probably took seconds to plate if not quicker.
+              like me, it probably took seconds if not quicker.
               <br /><br />
 
               Most daily habits associated with meals, like setting the table or
               arranging food on a plate, are instinctual and practical. Most
-              people abhor the idea of wasting intellectual energy a seemingly
-              trivial task. Because, who notices if a dumpling sits at a 45
-              degree angle 5 centimeters from the plate’s center? Lest we ignore
-              the food influencers, the answer is practically no one.<br /><br />
+              people hate the idea of wasting energy a seemingly trivial task.
+              Because, who notices if a dumpling sits at a 45 degree angle 5
+              centimeters from the plate’s center? Lest we ignore the food
+              influencers, the answer is practically no one.<br /><br />
 
-              But if you look outside the home, plating is a highly desirable
-              virtue of any great meal. Just look at restaurants, culinary
-              schools and traditional dinner parties. Chefs devote months to
-              perfecting a seasonal menu with presentations inspired by art,
-              nature, and tradition. Culinary students spend weeks training
-              their eyes on recognizing aesthetics in plating traditions from
-              around the globe. Online food photography, a more accessible genre
-              nowadays, offers another model to plate delectable meals.
+              If you look outside the home, plating is a highly desired virtue
+              of any great meal. Just look at restaurants, culinary schools and
+              traditional dinner parties. Chefs devote months to perfecting a
+              seasonal menu with presentations inspired by art, nature, and
+              tradition. Culinary students spend weeks training their eyes on
+              recognizing aesthetics in plating traditions from around the
+              globe. Online food photography, a more accessible genre, offers
+              another model for plating delectable meals.
               <br /><br />
 
               It almost seems reductive to say "You know good plating when you
@@ -125,25 +139,29 @@
               beautiful food photography can come from the visually rich and
               natural environment, television shows and the internet including
               blogs, advertisements, and Instagram. With all these competing
-              sources for food plating, is it true that the perfect plate of
-              food lies beyond our grasp?<br /><br />
+              examples, does the perfect plate of food lie beyond our grasp?<br /><br />
 
               The easy thing would be to accept the facts and call it a day. But
-              after researching this topic for hours, I noticed certain themes
-              about plating that could be codified. Conflicting advice be damned
-              -- could a computer, trained only on rules for beautiful and
-              traditional platings and a hand picked dataset, pleasingly arrange
-              food? <br /><br />
+              after researching plating for hours, I noticed certain themes
+              could be codified. And with any data collection problem, the idea
+              of trying the process, with technology came to mind. Could a
+              computer, trained only on rules for beautiful and traditional
+              platings and a hand picked dataset, pleasingly arrange food?
+              <br /><br />
 
-              Actually, it can! The quality, on the other hand, depends on the
-              quality of the input. The more images, the better the computer can
-              comprehend plating. And the more measurements, the more accurate
+              Actually, it can! Here's a plate of food being arranged by a
+              computer: <br />
+              <br />
+
+              <!-- INSERT ! -->
+
+              The quality of the final plate, though, depends on the quality of
+              the input. The more images, the better the computer can comprehend
+              the skill of plating. And the more measurements, the more accurate
               the final food placement. Hours of research and hundreds of lines
               of code later, this comprehensive primer on food plating brings us
               one step closer to formalizing the definition of an “aesthetically
-              pleasing plate of food.” So if humans can learn and internalize
-              rules, surely a computer can follow a similar procedure, or at the
-              very least try to.<br /><br />
+              pleasing plate of food.”<br /><br />
 
               My thesis research is three fold. First, I cover the history of
               plating, starting from its earliest traditions and rituals to its
@@ -413,101 +431,120 @@
             </h1>
 
             <p>
-              So how does statistics all figure into plating? The easiest way to
-              see this connection is to break down the problem, the anatomy of a
-              perfect plate, into quantifiable chunks. This section is a bit
-              wordy so if you want an abbreviated version click
-              <a>here</a>.<br /><br />
-
-              Let us imagine a plate of dumplings at a dinner table. We've
-              tossed a handful of dumplings randomly onto a plate, like darts on
-              a bullseye. The presentation is unremarkable, but we can only
-              switch the arrangement once. Any normal person might spend a few
-              minutes rearranging the dumplings to perfection. <br /><br />
-
-              But there's a faster way. Turns out, a computer measure and modify
-              the arrangement into a well-balanced and aesthetically pleasing
-              plate. It will only take a few seconds.<br /><br />
-
-              This is a prime example of an optimization problem. An
-              optimization problem begins when we want to find a *better* result
-              and asking ourselves a few questions. What is the most desirable
-              result? What is the starting point? And how much time, or
-              computing power, do I have? <br /><br />
-
-              Usually, you'll find people crunching numbers in fields like
-              biomedicine, finance and technology. But optimization problems are
-              everywhere and you can apply similar solutions to any industry
-              (and yes, cooking and plating especially). <br /><br />
-
-              To solve an optimization problem, we select the best result from a
-              set of alternatives based on some criteria. In the case of
-              plating, we must maximize a cost function related to pleasing food
-              arrangements. The cost function, which evaluates how well our
-              algorithm works with the data, includes several criteria.
-              <br /><br />
-
-              Here's one: We do not want the dumplings to overlap or stick
-              together. To prevent this, we create a criteria to ensure that the
-              dumplings are evenly spaced out. Take every combination of
-              dumplings on the plate, then find the distance between the two,
-              and add it to the criteria. In order to calculate this we need
-              specific measurements. <br /><br />
-
-              <span class="formula"
-                >Let Cd be the sum of distances between all combinations of
-                dumpling objects, n be the number of dumplings, D (d0, 0) be the
-                coordinates for the first dumpling with radius r0, and (d1, 1)
-                be the coordinates for the second dumpling with radius r1.</span
+              So how does statistics figure into plating? The easiest way to see
+              the connection is to break down the problem of plating, the
+              anatomy of a perfect plate, into quantifiable chunks. Click
+              <button
+                onclick="document.getElementById('abbreviated-stats').style.display='none';document.getElementById('wordy-stats').style.display='block'"
               >
+                here
+              </button>
+              for the whole explanation or click
+              <button
+                onclick="document.getElementById('wordy-stats').style.display='none';document.getElementById('abbreviated-stats').style.display='block'"
+              >
+                here
+              </button>
+              for an abbreviated version.<br /><br />
 
-              <img class="pu-photo" src="img/math0.png" /><br /><br />
+              <span id="abbreviated-stats">test test</span>
 
-              Once we solve this criteria, another one comes to mind. Even if
-              the dumplings are evenly spaced out, the dumplings could fall off
-              the edge of the plate. To address this spatial problem, we include
-              author-defined weights in the cost function. If the dumpling is in
-              danger of falling off the plate, an “if” statement ensures that
-              the algorithm will terminate. <br /><br />
+              <span id="wordy-stats"
+                >Let us imagine a plate of dumplings at a dinner table. We've
+                tossed a handful of dumplings randomly onto a plate, like darts
+                on a bullseye. The presentation is unremarkable, but we can only
+                switch the arrangement once. Any normal person might spend a few
+                minutes rearranging the dumplings to perfection. <br /><br />
 
-              <span class="formula"
-                >Let D be the cost for the dumpling’s distance from the edge of
-                the plate, R be the radius of the plate, n be the number of
-                dumplings on the plate, r be the radii of the dumpling, and m be
-                the magnitude of the position in the polar coordinate plane. To
-                capture the distance from the edge of the plate for all
-                dumplings, we sum their individual values n times.</span
-              ><br /><br />
+                But there's a faster way. Turns out, a computer measure and
+                modify the arrangement into a well-balanced and aesthetically
+                pleasing plate. It will only take a few seconds.<br /><br />
 
-              <img class="pu-photo" src="img/math1.png" /><br /><br />
+                This is a prime example of an optimization problem. An
+                optimization problem begins when we want to find a *better*
+                result and asking ourselves a few questions. What is the most
+                desirable result? What is the starting point? And how much time,
+                or computing power, do I have? <br /><br />
 
-              Given the above criteria, we can define the overall cost function
-              below. The w coefficients define the relative weighting between
-              the cost terms. If the cost function failed to include specified
-              criteria, such as omitting certain wcoefficients, we would run
-              into negative plating examples as seen below.
+                Usually, you'll find people crunching numbers in fields like
+                biomedicine, finance and technology. But optimization problems
+                are everywhere and you can apply similar solutions to any
+                industry (and yes, cooking and plating especially). <br /><br />
 
-              <img class="pu-photo" src="img/math2.png" /><br /><br />
+                To solve an optimization problem, we select the best result from
+                a set of alternatives based on some criteria. In the case of
+                plating, we must maximize a cost function related to pleasing
+                food arrangements. The cost function, which evaluates how well
+                our algorithm works with the data, includes several criteria.
+                <br /><br />
 
-              If the system attempted to maximize the distance between
-              dumplings, but not maximize the distance of dumplings from the
-              edge of the plate, the dumplings would move off the plate (wa =
-              0). On the other hand, if the system attempted to maximize the
-              distance of the dumplings from the edge of the plate, but not the
-              distances from one another, the dumplings would not move (wd = 0).
-              <br /><br />
+                Here's one: We do not want the dumplings to overlap or stick
+                together. To prevent this, we create a criteria to ensure that
+                the dumplings are evenly spaced out. Take every combination of
+                dumplings on the plate, then find the distance between the two,
+                and add it to the criteria. In order to calculate this we need
+                specific measurements. <br /><br />
 
-              To actually obtain a plating arrangement, we look to an algorithm
-              called simulated annealing. This is an iterative local search
-              optimization algorithm that uses Markov chain Monte Carlo.
-              <br /><br />
-              Why this one? This method is preferable when the possibilities are
-              near infinite. When cycling through possibilities for plating
-              arrangements, it won't settle for best first it finds -- it'll
-              keep searching, ie: an iteration can escape or overshoot the local
-              minimum to explore more options. On the other hand, simulated
-              annealing takes a long time to run and involves more complexity
-              than an optimization algorithm such as gradient descent.
+                <span class="formula"
+                  >Let Cd be the sum of distances between all combinations of
+                  dumpling objects, n be the number of dumplings, D (d0, 0) be
+                  the coordinates for the first dumpling with radius r0, and
+                  (d1, 1) be the coordinates for the second dumpling with radius
+                  r1.</span
+                >
+
+                <img class="pu-photo" src="img/math0.png" /><br /><br />
+
+                Once we solve this criteria, another one comes to mind. Even if
+                the dumplings are evenly spaced out, the dumplings could fall
+                off the edge of the plate. To address this spatial problem, we
+                include author-defined weights in the cost function. If the
+                dumpling is in danger of falling off the plate, an “if”
+                statement ensures that the algorithm will terminate.
+                <br /><br />
+
+                <span class="formula"
+                  >Let D be the cost for the dumpling’s distance from the edge
+                  of the plate, R be the radius of the plate, n be the number of
+                  dumplings on the plate, r be the radii of the dumpling, and m
+                  be the magnitude of the position in the polar coordinate
+                  plane. To capture the distance from the edge of the plate for
+                  all dumplings, we sum their individual values n times.</span
+                ><br /><br />
+
+                <img class="pu-photo" src="img/math1.png" /><br /><br />
+
+                Given the above criteria, we can define the overall cost
+                function below. The w coefficients define the relative weighting
+                between the cost terms. If the cost function failed to include
+                specified criteria, such as omitting certain wcoefficients, we
+                would run into negative plating examples as seen below.
+
+                <img class="pu-photo" src="img/math2.png" /><br /><br />
+
+                If the system attempted to maximize the distance between
+                dumplings, but not maximize the distance of dumplings from the
+                edge of the plate, the dumplings would move off the plate (wa =
+                0). On the other hand, if the system attempted to maximize the
+                distance of the dumplings from the edge of the plate, but not
+                the distances from one another, the dumplings would not move (wd
+                = 0).
+                <br /><br />
+
+                To actually obtain a plating arrangement, we look to an
+                algorithm called simulated annealing. This is an iterative local
+                search optimization algorithm that uses Markov chain Monte
+                Carlo.
+                <br /><br />
+                Why this one? This method is preferable when the possibilities
+                are near infinite. When cycling through possibilities for
+                plating arrangements, it won't settle for best first it finds --
+                it'll keep searching, ie: an iteration can escape or overshoot
+                the local minimum to explore more options. On the other hand,
+                simulated annealing takes a long time to run and involves more
+                complexity than an optimization algorithm such as gradient
+                descent.</span
+              >
             </p>
           </div>
         </div>
