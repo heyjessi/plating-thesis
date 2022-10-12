@@ -265,3 +265,12 @@ li {
 #abbreviated-stats {
   display: none;
 }
+
+button {
+  background-color: #12508b;
+  color: white;
+  border-style: hidden;
+  border-radius: 20px;
+  font-family: NeueBit;
+  line-height: 15px;
+}
