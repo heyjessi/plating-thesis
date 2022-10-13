@@ -54,7 +54,7 @@
           <img
             src="img/plate3.png"
             class="p1 dis dis-big"
-            onclick="document.getElementById('baos-animation').style.display='none'"
+            onclick="document.getElementById('plates-animation').style.display='none';document.getElementById('sushi-animation').style.display='block'"
           />
           <img
             src="img/plate2.png"
@@ -88,6 +88,20 @@
             onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('eyes-animation').style.display='none'"
           />
           <h2>you eat with your eyes</h2>
+          <img
+            src="img/eye.gif"
+            class="eyes eyes-big"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('eyes-animation').style.display='none'"
+          />
+        </div>
+
+        <!-- sushi animation -->
+        <div class="inner" id="sushi-animation">
+          <img
+            src="img/sushi.gif"
+            class="sushi"
+            onclick="document.getElementById('plates-animation').style.display='grid';document.getElementById('sushi-animation').style.display='none'"
+          />
         </div>
 
         <!-- abstract -->
@@ -149,13 +163,13 @@
               highly subjected nature of plating. But after researching plating
               for hours, I noticed certain themes could be codified, turned into
               numerable data points. And with any data collection problem, the
-              idea of digitizing the process came to mind. Could a computer,
-              trained only on rules for beautiful and traditional platings and a
-              hand picked dataset, pleasingly arrange food?
+              idea of digitizing the process became an intriguing puzzle. Could
+              a computer, trained only on rules for beautiful and traditional
+              platings and a hand picked dataset, pleasingly arrange food?
               <br /><br />
 
-              Actually, it can! Here's a plate of food being arranged by a
-              computer: <br />
+              According to research, it can! Here's a plate of food being
+              arranged by a computer: <br />
               <br />
 
               <iframe
@@ -166,13 +180,14 @@
               ></iframe
               ><br /><br />
 
-              The aesthetic quality of the final plate, though, depends on the
-              quality of the input. The more images, the better the computer can
-              comprehend the skill of plating. And the more measurements, the
-              more accurate the final food placement. Hours of research and
-              hundreds of lines of code later, this comprehensive primer on food
-              plating brings us one step closer to formalizing the definition of
-              an “aesthetically pleasing plate of food.”<br /><br />
+              How the final plate looks depends on the quality of the input. The
+              more images, the better the computer can comprehend the skill of
+              plating. And the more measurements, whether it be the length of
+              the food or the distance between the plate and food, the more
+              accurate the final food placement. Hours of research and hundreds
+              of lines of code later, this comprehensive primer on food plating
+              brings us one step closer to formalizing the definition of an
+              “aesthetically pleasing plate of food.”<br /><br />
 
               My thesis research is three fold. First, I cover the history of
               plating, starting from its earliest traditions and rituals to its
@@ -449,30 +464,19 @@
             <p>
               So how does statistics figure into plating? The easiest way to see
               the connection is to break down plating, and the anatomy of a
-              perfect plate, into quantifiable chunks. Click
-              <button
-                onclick="document.getElementById('abbreviated-stats').style.display='none';document.getElementById('wordy-stats').style.display='block'"
-              >
-                here
-              </button>
-              for the whole explanation or click
-              <button
-                onclick="document.getElementById('wordy-stats').style.display='none';document.getElementById('abbreviated-stats').style.display='block'"
-              >
-                here
-              </button>
-              for an abbreviated version.<br /><br />
+              perfect plate, into quantifiable chunks. <br /><br />
 
-              <span id="abbreviated-stats"
+              <span id="wordy-stats"
                 >Let us imagine a plate of dumplings at a dinner table. We've
                 tossed a handful of dumplings randomly onto a plate, like darts
                 on a bullseye. The presentation is unremarkable, but we can only
-                switch the arrangement once. Any normal person might spend a few
-                minutes rearranging the dumplings to perfection. <br /><br />
+                switch the arrangement once. Any logical person might spend a
+                few minutes mapping out the plate before rearranging the
+                dumplings to perfection. <br /><br />
 
                 But there's a faster way. Turns out, a computer measure and
                 modify the arrangement into a well-balanced and aesthetically
-                pleasing plate. It will only take a few seconds.<br /><br />
+                pleasing plate. And it will only take a few seconds.<br /><br />
 
                 This is an example of an optimization problem. An optimization
                 problem begins when we want to find a *better* result and asking
@@ -480,50 +484,28 @@
                 What is the starting point? And how much time, or computing
                 power, do I have? <br /><br />
 
+                Usually, you'll find people crunching numbers in fields like
+                biomedicine, finance and technology. But optimization problems
+                are everywhere and you can apply similar solutions to any
+                industry (yes, cooking and plating especially). <br /><br />
+
                 To solve an optimization problem, we select the best result from
                 a set of alternatives based on some criteria. In the case of
                 plating, we create a bunch of different plating scenarios,
                 measure certain characterics of the final plates, and elimate
-                ones that don't fit the criteria. The final plate is the
-                solution to this optimization problem.
-                <br /><br
-              /></span>
-
-              <span id="wordy-stats"
-                >Let us imagine a plate of dumplings at a dinner table. We've
-                tossed a handful of dumplings randomly onto a plate, like darts
-                on a bullseye. The presentation is unremarkable, but we can only
-                switch the arrangement once. Any normal person might spend a few
-                minutes rearranging the dumplings to perfection. <br /><br />
-
-                But there's a faster way. Turns out, a computer measure and
-                modify the arrangement into a well-balanced and aesthetically
-                pleasing plate. It will only take a few seconds.<br /><br />
-
-                This is a prime example of an optimization problem. An
-                optimization problem begins when we want to find a *better*
-                result and asking ourselves a few questions. What is the most
-                desirable result? What is the starting point? And how much time,
-                or computing power, do I have? <br /><br />
-
-                Usually, you'll find people crunching numbers in fields like
-                biomedicine, finance and technology. But optimization problems
-                are everywhere and you can apply similar solutions to any
-                industry (and yes, cooking and plating especially). <br /><br />
-
-                To solve an optimization problem, we select the best result from
-                a set of alternatives based on some criteria. In the case of
-                plating, we must maximize a cost function related to pleasing
-                food arrangements. The cost function, which evaluates how well
-                our algorithm works with the data, includes several criteria.
+                ones that don't fit the criteria. In more technical terms we
+                must maximize a cost function related to pleasing food
+                arrangements. The final plate is the solution to this
+                optimization problem.
                 <br /><br />
 
-                Here's one: We do not want the dumplings to overlap or stick
-                together. To prevent this, we create a criteria to ensure that
-                the dumplings are evenly spaced out. Take every combination of
-                dumplings on the plate, then find the distance between the two,
-                and add it to the criteria. In order to calculate this we need
-                specific measurements. <br /><br />
+                The cost function, which evaluates how well our algorithm works
+                with the data, includes several criteria. Here's an example: We
+                do not want dumplings to overlap or stick together on a plate.
+                To prevent this, we create a criteria to ensure that the
+                dumplings are evenly spaced out. We compute every combination of
+                dumplings arrangements on the plate, then find the distance
+                between the two, and add it to the criteria. <br /><br />
 
                 <span class="formula"
                   >Let Cd be the sum of distances between all combinations of
@@ -535,10 +517,9 @@
 
                 <img class="pu-photo" src="img/math0.png" /><br /><br />
 
-                Once we solve this criteria, another one comes to mind. Even if
-                the dumplings are evenly spaced out, the dumplings could fall
-                off the edge of the plate. To address this spatial problem, we
-                include author-defined weights in the cost function. If the
+                Even if the dumplings are evenly spaced out, the dumplings could
+                fall off the edge of the plate. To address this spatial problem,
+                we include author-defined weights in the cost function. If the
                 dumpling is in danger of falling off the plate, an “if”
                 statement ensures that the algorithm will terminate.
                 <br /><br />
